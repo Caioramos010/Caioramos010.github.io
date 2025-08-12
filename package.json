@@ -1,5 +1,5 @@
 {
-  "homepage": "https://caioramos010.github.io/Portifolio",
+  "homepage": "https://caioramos010.github.io",
   "name": "portifolio",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +19,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d docs",
     "build": "react-scripts build",
-    "build:gh": "cross-env PUBLIC_URL=/Portifolio BUILD_PATH=docs react-scripts build",
+    "build:gh": "https://caioramos010.github.io BUILD_PATH=docs react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
