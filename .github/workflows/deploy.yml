@@ -28,7 +28,7 @@ jobs:
       
       - name: Build project
         env:
-          PUBLIC_URL: /Portifolio
+          PUBLIC_URL: /
           BUILD_PATH: docs
         run: npm run build
 
