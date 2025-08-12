@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import './SideNavigation.css';
 
 function SideNavigation() {
@@ -7,13 +7,13 @@ function SideNavigation() {
   const lastScrollTime = useRef(0);
   const scrollArray = useRef([]);
 
-  const sections = [
+  const sections = useMemo(() => [
     { id: 'hero', label: 'Início' },
     { id: 'sobre', label: 'Sobre' },
     { id: 'projetos', label: 'Projetos' },
     { id: 'contato', label: 'Contato' },
     { id: 'footer', label: 'Footer' }
-  ];
+  ], []);
 
   // Detecção automática da seção ativa baseada no scroll
   useEffect(() => {
