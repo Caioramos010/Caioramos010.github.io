@@ -5,7 +5,6 @@ import Curriculo from './pages/Curriculo';
 import Artigos from './pages/Artigos';
 
 function AppRouter() {
-  // Define o basename baseado no ambiente
   const basename = process.env.NODE_ENV === 'production' ? '/Portifolio' : '';
   
   return (
