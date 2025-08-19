@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './HeroSection.css';
-import illustration from '../../images/illustration.png';
-import logo from '../../images/logo.png';
+import illustration from 'public/../../images/illustration.png';
+import logo from '../public/images/logo.png';
 
 function HeroSection() {
   return (
