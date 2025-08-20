@@ -5,13 +5,13 @@ import Curriculo from './pages/Curriculo';
 import Artigos from './pages/Artigos';
 
 function AppRouter() {
-  
-const basename = import.meta.env.BASE_URL || '/';
+  // Define o basename baseado no ambiente
+  const basename = process.env.NODE_ENV === 'production' ? '/Portifolio' : '';
   
   return (
     <Router basename={basename}>
       <Routes>
-        <Route path="/Portifolio" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/curriculo" element={<Curriculo />} />
         <Route path="/artigos" element={<Artigos />} />
       </Routes>
